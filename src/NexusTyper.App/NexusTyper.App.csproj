@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\NexusTyper.Core\NexusTyper.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>NexusTyper</AssemblyName>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\Nexus.ico</ApplicationIcon>
+    <Company>Nexus Project</Company>
+    <Product>Nexus Tayper</Product>
+    <Authors>Nexus Project</Authors>
+    <Description>Local precision tayper tool for Windows.</Description>
+    <Copyright>Copyright © 2026 Nexus Project</Copyright>
+    <Version>0.11.0</Version>
+    <AssemblyVersion>0.11.0.0</AssemblyVersion>
+    <FileVersion>0.11.0.0</FileVersion>
+    <InformationalVersion>0.11.0</InformationalVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType Condition="'$(Configuration)'=='Release'">none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeSymbolsInSingleFile>false</IncludeSymbolsInSingleFile>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <SatelliteResourceLanguages>ru;en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="NexusTyper.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\*.ttf" />
+    <Content Include="Assets\Fonts\OFL.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

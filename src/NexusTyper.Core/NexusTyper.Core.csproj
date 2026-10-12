@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Company>Nexus Project</Company>
+    <Product>Nexus Typer</Product>
+    <Authors>Nexus Project</Authors>
+    <Description>Local typing engine.</Description>
+    <Copyright>Copyright © 2026 Nexus Project</Copyright>
+    <Version>0.10.0</Version>
+    <AssemblyVersion>0.10.0.0</AssemblyVersion>
+    <FileVersion>0.10.0.0</FileVersion>
+    <InformationalVersion>0.10.0</InformationalVersion>
+  </PropertyGroup>
+
+</Project>
